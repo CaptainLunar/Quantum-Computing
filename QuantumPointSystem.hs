@@ -94,7 +94,7 @@ getStateTuple p (x:xs)
         | p == fst x = Just x
         | otherwise  = getStateTuple p xs
 
--- Deconstructs Just type to return the second component
+-- Deconstructs Maybe type to return the second component
 getComplexState :: (RealFloat a) => State a -> Maybe (Complex a)
 getComplexState a = Just $ snd a
 
